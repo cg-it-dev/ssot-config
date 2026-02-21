@@ -5,6 +5,7 @@ services:
       - "3001:3001"
     environment:
       - MONGO_URI
+      - MYSQL_URI        # ← tambah ini
       - MYSQL_USN
       - MYSQL_PWD
       - MYSQL_DB_PROD
@@ -21,3 +22,12 @@ services:
       - NOTIFICATION_SERVICE_URL
       - TZ
     restart: always
+    networks:
+      - ssot_network
+      - mysql_cg-db-prod-connection
+
+networks:
+  ssot_network:
+    driver: bridge
+  mysql_cg-db-prod-connection:
+    external: true

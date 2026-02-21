@@ -7,17 +7,17 @@ services:
       - MONGO_URI
       - MYSQL_USN
       - MYSQL_PWD
-      -MYSQL_DB_PROD
-      -MYSQL_DB_TEST
-      -PORT
-      -JWT_SECRET
-      -CRYPT_KEY
-      -CRYPT_IV
-      -MINIO_ENDPOINT
-      -MINIO_PORT
-      -MINIO_ACCESS_KEY
-      -MINIO_SECRET_KEY
-      -BACKEND_URI
-      -NOTIFICATION_SERVICE_URL
-      -TZ
+      - MYSQL_DB_PROD
+      - MYSQL_DB_TEST
+      - PORT
+      - JWT_SECRET
+      - CRYPT_KEY
+      - CRYPT_IV
+      - MINIO_ENDPOINT
+      - MINIO_PORT
+      - MINIO_ACCESS_KEY
+      - MINIO_SECRET_KEY
+      - BACKEND_URI
+      - NOTIFICATION_SERVICE_URL
+      - TZ
     restart: always

@@ -1,0 +1,8 @@
+services:
+  loan-apps:
+    image: cg-it-dev/loan-apps-services:latest
+    ports:
+      - "3001:3001"
+    environment:
+      - PORT=3001
+    restart: always

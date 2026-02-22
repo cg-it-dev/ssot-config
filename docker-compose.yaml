@@ -29,7 +29,7 @@ services:
   loan-app-ui:
     image: cgitdev/loan-apps-ui:v8
     ports:
-      - "3000:80"
+      - "8601:8601"
     environment:
       - BACKEND_URL=http://192.182.6.202:8000/api-v1/loan-app
     restart: always

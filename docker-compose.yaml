@@ -31,7 +31,17 @@ services:
     ports:
       - "8601:8601"
     environment:
-      - BACKEND_URL=http://192.182.6.202:8000/api-v1/loan-app
+      - BACKEND_URL=http://192.182.6.202:8601/api-v1/loan-app
+    restart: always
+    networks:
+      - ssot-config_default
+
+  portal-hm-ui:
+    image: cgitdev/portal-hm-ui
+    ports:
+      - "8603:8603"
+    environment:
+      - BACKEND_URL=http://192.182.6.202:8603/api-v1/loan-app
     restart: always
     networks:
       - ssot-config_default

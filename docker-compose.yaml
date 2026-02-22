@@ -1,6 +1,6 @@
 services:
   loan-apps:
-    image: cgitdev/loan-apps-services:v22
+    image: cgitdev/loan-apps-services:v23
     ports:
       - "3001:3001"
     environment:

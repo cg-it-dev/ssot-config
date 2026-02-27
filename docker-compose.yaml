@@ -27,7 +27,7 @@ services:
       - mysql_cg-db-prod-connection
 
   loan-app-ui:
-    image: cgitdev/loan-apps-ui:v18
+    image: cgitdev/loan-apps-ui:v20
     ports:
       - "8601:8601"
     environment:

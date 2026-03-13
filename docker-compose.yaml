@@ -37,7 +37,7 @@ services:
       - ssot-config_default
 
   portal-hm-ui:
-    image: cgitdev/portal-hm-ui:v6
+    image: cgitdev/portal-hm-ui:v7
     ports:
       - "8603:8603"
     environment:
